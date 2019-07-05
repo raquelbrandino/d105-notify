@@ -1,0 +1,42 @@
+;;CXZ\body{
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        'nav nav nav'
+        'header header header'
+        'info info info'
+        'vid vid vid'
+        'pessoas pessoas pessoas'
+        'footer footer footer';
+    }  \Z\Z a
+
+}
+
+n   qdsq    dsq dsdsdsssassssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssdv{
+    background-color: green;
+    grid-area: nav;
+    width: 100vw;
+}
+
+header{
+    background-color: blueviolet;
+    grid-area: header;
+    display: flex;
+    width: 500px;
+}
+
+body section :nth-child(1){
+    grid-area: info;
+}
+
+body section :nth-child(2){
+    grid-area: vid;
+}
+
+body section :nth-child(3){
+    grid-area: pessoas;
+}
+
+footer{
+    grid-area: footer;
+}
