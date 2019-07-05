@@ -14,24 +14,36 @@ body{
 }
 
 nav{
-    background-color: green;
+    background-color: #2CBF60;
     grid-area: nav;
     width: 100vw;
+}
+
+@media(max-width: 850px){
+    h2{
+        .btn-toggle{display: block;}
+    }
 }
 
 header{
     align-items: center;
     background-image: url(image/banner.png); 
+    background-repeat: no-repeat;
     color: white;
     display: flex;
     grid-area: header;
     justify-content: space-around;
+	height:auto
 }
 
 h1{
     font-family: 'Pacifico', cursive;
     font-size: 5.1rem;
     font-weight: normal;
+}
+
+span{
+    color: #2CBF60;
 }
 
 h2{
@@ -58,6 +70,7 @@ header button{
     max-height: 370px;
     width: auto;
     height: auto;
+    display: block;
 }
 
 body section :nth-child(1){
