@@ -7,10 +7,11 @@ body{
         ' vid '
         ' pessoas '
         ' footer ';
-    grid-template-rows: 1vh 600px 58vh 15vh;
+    grid-template-rows: 1vh 77vh 29vh 15vh;
     grid-template-columns: 100vw;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: gray;
 }
 
 nav{
@@ -23,16 +24,17 @@ header{
     align-items: center;
     background-image: url(image/banner.png); 
     background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     display: flex;
     grid-area: header;
     justify-content: space-around;
-	height: 80vh;
+	height: 77vh;
 }
 
 
 header section{
-    margin: 3%;
+    margin-left: 20px;
     display: flex;
     justify-content: space-evenly;
     height: 100%;
@@ -89,17 +91,26 @@ header section aside{
     grid-area: info;
     display: flex;
     justify-content: space-evenly;
-    ali
+    margin: 0;
+    margin-top: 0;
+    background-color: white;
 }
 
-body section :nth-child(2){
-    grid-area: vid;
+.info div{
+    margin-inline-start: 13vh;
+    color: black;
+    font-weight: bold;
+    margin-top: 5px
 }
 
-body section :nth-child(3){
-    grid-area: pessoas;
+.info button{
+    height: 72px;
+    border: none;
+    border-radius: 38px;
+    background-color: #2CBF60;
+    border-bottom-width: 7px;
+    margin-left: auto;
+    margin-right: 10%;
+    width: 72px;
 }
 
-footer{
-    grid-area: footer;
-}
