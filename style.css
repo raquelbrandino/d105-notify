@@ -19,12 +19,6 @@ nav{
     width: 100vw;
 }
 
-@media(max-width: 850px){
-    h2{
-        .btn-toggle{display: block;}
-    }
-}
-
 header{
     align-items: center;
     background-image: url(image/banner.png); 
@@ -33,7 +27,17 @@ header{
     display: flex;
     grid-area: header;
     justify-content: space-around;
-	height: 75vh;
+	height: 80vh;
+}
+
+
+header section{
+    margin: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    align-items: flex-end;
 }
 
 h1{
@@ -49,7 +53,7 @@ span{
 
 .definition {
     font-size: 1.7rem;
-    line-height: 0.5;
+    line-height: 1;
     margin-block-end: 9%;
 }
 
@@ -65,17 +69,27 @@ header button{
     width: 73px;
 }
 
-.hand{
-    margin-top: 212px;
-    max-width: 331px;
-    max-height: 370px;
+header section aside{
     width: auto;
-    height: auto;
-    display: block;
 }
 
-body section :nth-child(1){
+.hand{
+    max-width: 18em;
+    max-height: 23em;
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+@media (min-width:700px){
+    .hand{display: block;}
+}
+
+.info{
     grid-area: info;
+    display: flex;
+    justify-content: space-evenly;
+    ali
 }
 
 body section :nth-child(2){
