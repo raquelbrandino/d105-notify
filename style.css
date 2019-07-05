@@ -1,28 +1,63 @@
-;;CXZ\body{
-    margin: 0;
-    display: grid;
+body{
+    display: grid;    
     grid-template-areas:
-        'nav nav nav'
-        'header header header'
-        'info info info'
-        'vid vid vid'
-        'pessoas pessoas pessoas'
-        'footer footer footer';
-    }  \Z\Z a
-
+        ' nav '
+        ' header '
+        ' info '
+        ' vid '
+        ' pessoas '
+        ' footer ';
+    grid-template-rows: 1vh 500px 58vh 15vh;
+    grid-template-columns: 100vw;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-n   qdsq    dsq dsdsdsssassssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssdv{
+nav{
     background-color: green;
     grid-area: nav;
     width: 100vw;
 }
 
 header{
-    background-color: blueviolet;
-    grid-area: header;
+    align-items: center;
+    background-image: url(image/banner.png); 
+    color: white;
     display: flex;
-    width: 500px;
+    grid-area: header;
+    justify-content: space-around;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 5.1rem;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 1.7rem;
+    white-space: pre;
+    text-align: left;
+}
+
+header button{
+    height: 72px;
+    border: none;
+    border-radius: 38px;
+    background-color: black;
+    border-bottom-width: 7px;
+    margin-left: auto;
+    margin-right: 10%;
+    opacity: 0.8;
+    width: 73px;
+}
+
+.hand{
+    margin-top: 134px;
+    max-width: 331px;
+    max-height: 370px;
+    width: auto;
+    height: auto;
 }
 
 body section :nth-child(1){
