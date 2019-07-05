@@ -7,7 +7,7 @@ body{
         ' vid '
         ' pessoas '
         ' footer ';
-    grid-template-rows: 1vh 500px 58vh 15vh;
+    grid-template-rows: 1vh 600px 58vh 15vh;
     grid-template-columns: 100vw;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -33,23 +33,24 @@ header{
     display: flex;
     grid-area: header;
     justify-content: space-around;
-	height:auto
+	height: 75vh;
 }
 
 h1{
     font-family: 'Pacifico', cursive;
     font-size: 5.1rem;
     font-weight: normal;
+    margin-block-end: 0.6em;
 }
 
 span{
     color: #2CBF60;
 }
 
-h2{
+.definition {
     font-size: 1.7rem;
-    white-space: pre;
-    text-align: left;
+    line-height: 0.5;
+    margin-block-end: 9%;
 }
 
 header button{
@@ -60,12 +61,12 @@ header button{
     border-bottom-width: 7px;
     margin-left: auto;
     margin-right: 10%;
-    opacity: 0.8;
+    opacity: 0.6;
     width: 73px;
 }
 
 .hand{
-    margin-top: 134px;
+    margin-top: 212px;
     max-width: 331px;
     max-height: 370px;
     width: auto;
