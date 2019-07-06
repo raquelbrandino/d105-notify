@@ -97,8 +97,6 @@ header section aside{
     grid-area: info;
     display: flex;
     justify-content: space-evenly;
-    margin: 0;
-    margin-top: 0;
     background-color: white;
     padding: 0;
     height: 100%;
@@ -108,7 +106,8 @@ header section aside{
     margin-inline-start: 5%;
     color: black;
     font-weight: bold;
-    margin-top: 5px
+    margin-top: 5px;    
+    text-align: center;
 }
 
 .info button{
@@ -121,3 +120,6 @@ header section aside{
     width: 4.5rem;
 }
 
+.subtitulo{
+    font-size: 1.2rem;
+}
