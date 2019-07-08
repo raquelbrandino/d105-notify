@@ -7,7 +7,7 @@ body{
         ' vid '
         ' pessoas '
         ' footer ';
-    grid-template-rows: 1vh 77vh 29vh auto 70vh;
+    grid-template-rows: 1vh 77vh auto auto auto;
     grid-template-columns: 100vw;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -190,4 +190,75 @@ input{
 
 .botao button{
     background-color: #2cbf60;
+}
+
+.section3{
+    background-color: white;
+    grid-area: pessoas;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.texto {
+    padding: 2% 0;
+    width: 61%;
+    font-size: 1rem;
+}
+
+.rosto {
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 60px;
+}
+
+.fixo {
+    background-color: yellow;
+    display: flex;
+}
+
+.some {
+    background-color: green;
+    display: none;
+}
+
+@media (min-width:700px){ 
+    .some {
+        display: flex;
+    }
+}
+
+.texto2 {
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto2 h3{
+    padding: 0% 0;
+    margin: 0;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+}
+.links button{
+    height: 30px;
+    border: none;
+    border-radius: 40px;
+    background-color:gray;
+    opacity: 0.6;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
