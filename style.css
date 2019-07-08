@@ -7,7 +7,7 @@ body{
         ' vid '
         ' pessoas '
         ' footer ';
-    grid-template-rows: 1vh 77vh 29vh 15vh;
+    grid-template-rows: 1vh 77vh 29vh auto 70vh;
     grid-template-columns: 100vw;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -123,6 +123,89 @@ header section aside{
     width: 4.5rem;
 }
 
+.descrição{
+    display: none;
+}
+
+@media (min-width:700px){
+    .descrição{display: block;
+    }
+}
+
 .subtitulo{
     font-size: 1.2rem;
+}
+
+.section2{
+    grid-area: vid;
+    display: block;
+    justify-content: space-around;
+    align-items: initial;
+    padding: 50px 25px;
+}
+
+@media (min-width:700px){
+    .section2 {display: flex;
+    }
+}
+
+.cx1{
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 0 0;
+}
+
+@media (min-width:700px){ 
+    .cx1{width: 40%;
+    }
+}
+
+ @media (min-width:700px){
+    .video{width: 40%;
+        height: auto;
+    }
+}
+
+h2{
+    padding: 0 0;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.cx1 div p{
+    font-size: 10pt;
+    size: 100%;
+}
+
+input{
+    width: 257px;
+    height: 40px;
+}
+
+.botao {
+    display:flex;
+}
+
+.botao button{
+    background-color: #2cbf60;
+}
+
+.section3{
+   
+    background-color: white;
+    
+}
+
+.oi{
+    padding: 0 90px;
+    align-items: center;
+    
+}
+
+.texto {
+    width: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
