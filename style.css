@@ -7,11 +7,11 @@ body{
         ' vid '
         ' pessoas '
         ' footer ';
-    grid-template-rows: 1vh 77vh auto auto auto;
+    grid-template-rows: 1vh 77vh auto auto auto auto;
     grid-template-columns: 100vw;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: gray;
+    background-color: #e3e3e3;
     overflow-x: hidden;
 }
 
@@ -161,9 +161,13 @@ header section aside{
     }
 }
 
+.video {
+width: 40%;
+height: auto;
+}
+
 @media (min-width:700px){
     .video{width: 40%;
-        height: auto;
     }
 }
 
@@ -180,8 +184,10 @@ h2{
 }
 
 input{
-    width: 257px;
+    width: 240px;
     height: 40px;
+    border-radius: 12.5px 0 0 12.5px;
+    border: none;
 }
 
 .botao {
@@ -190,6 +196,11 @@ input{
 
 .botao button{
     background-color: #2cbf60;
+    color: white;
+    border-radius: 0 12.5px 12.5px 0;
+    width: 80px;
+    height: 40px;
+    border: none;
 }
 
 .section3{
@@ -209,7 +220,6 @@ input{
 }
 
 .rosto {
-    /* background-color: blueviolet; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,16 +228,14 @@ input{
 }
 
 .fixo {
-    background-color: yellow;
-    display: flex;
+     display: flex;
 }
 
 .some {
-    background-color: green;
     display: none;
 }
 
-@media (min-width:700px){ 
+@media (min-width:1030px){ 
     .some {
         display: flex;
     }
@@ -255,10 +263,38 @@ input{
     height: 30px;
     border: none;
     border-radius: 40px;
-    background-color:gray;
+    background-color:#e3e3e3;
     opacity: 0.6;
     width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.cx_footer {
+    background-color:#e3e3e3;
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.links_footer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.links_footer a{
+    text-decoration: none;
+    color: gray;
+}
+
+@media (min-width:700px){
+    .links_footer {
+        width: 40%;
+    }
 }
