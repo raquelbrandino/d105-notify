@@ -161,7 +161,7 @@ header section aside{
     }
 }
 
- @media (min-width:700px){
+@media (min-width:700px){
     .video{width: 40%;
         height: auto;
     }
@@ -174,8 +174,9 @@ h2{
 }
 
 .cx1 div p{
-    font-size: 10pt;
+    font-size: 11pt;
     size: 100%;
+    line-height: 25px;
 }
 
 input{
@@ -189,23 +190,4 @@ input{
 
 .botao button{
     background-color: #2cbf60;
-}
-
-.section3{
-   
-    background-color: white;
-    
-}
-
-.oi{
-    padding: 0 90px;
-    align-items: center;
-    
-}
-
-.texto {
-    width: 62%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
